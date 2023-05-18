@@ -1,0 +1,360 @@
+/*===============================================================================*/
+/*       STYLE DE LA PANTALLA DE INICIO PARA REGISTRAR ENTRADA Y SALIDA          */
+/*===============================================================================*/
+
+/*Estilo General*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Google Fonts Tipo Letra*/
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Serif Pro', serif;
+    background-image: url(../inicio/img/fondoindex.png);
+    background-size: cover;
+}
+
+/* <h1>Sistema de registro de visitas</h1> */
+h1{
+    text-align: center;
+    padding-top: 12px;
+    /*padding-left: 150px;*/
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    box-shadow: inset -2px 2px 25px white;
+}
+
+.acceso_al_login{
+border-radius: 8px;
+}
+
+/* <h2 id="fecha"></h2> */
+/*#fecha{
+    text-align: center;
+    /*padding-left: 310px;/
+    color: rgb(15, 234, 88 );
+    font-weight: normal;
+    font-size: 25px;
+    margin-top: 15px;
+}*/
+
+/*<main class="fecha">*/
+.fecha {
+    width: 40%;
+    height: 10%;
+    text-align: center;
+    margin-left: 58%;
+    /*background: rgb(15, 36, 48);*/
+    /*border-radius: 27px;*/
+    color: rgb(31, 184, 191);
+    font-size: 10px;
+  }
+  .fecha__completa {
+    text-align: center;
+  }
+  .hora {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    align-items: center;
+    font-weight: bold;
+    color: rgb(31, 184, 191)
+  }
+  
+
+/* <div class="Container"> */
+.Container{
+    width: 700px;
+    background: #0E4C73;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 65px;
+    border-radius: 30px;
+}
+
+.contenedor_botones{
+    width: 700px;
+    background: #0E4C73;
+    padding: 20px;
+    margin-top: -50px;
+    margin-left: 65px;
+    border-radius: 30px;
+}
+
+/*  <a class="acceso_al_login" href="">Ingresar al Sistema</a> */
+.acceso_al_login{
+    color: rgb(31, 184, 191)
+}
+
+/* <p class="DNI">Ingrese su DNI</p> */
+.DNI{
+    text-align: center;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+}
+
+/* <input  type="txt" plaseholder="DNI del Empleado" name="txtdni"> */
+input{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    /*outline: none;*/
+    /*stroke:rgb(15, 234, 88);*/
+    border-radius: 17px;
+    background: #F8FDFF;
+    /*fill-opacity: 10%;*/
+}
+
+/* <div class="botones_entrada_salida"> */
+.botones_entrada_salida{
+    display: flex;
+    margin-top: 20px;
+}
+
+/*.entrada{
+    width: 100%;
+    position: relative;
+    padding: 20px 50px;
+    text-decoration: none;
+    color: #161515;
+    letter-spacing: 10px;
+    text-indent: 10px;
+    z-index: 2; 
+    text-align: center;   
+    text-decoration: none;
+}
+.entrada::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(90deg, rgb(31, 184, 191), rgb(31, 184, 191 ), rgb(15, 234, 88), rgb(19, 227, 255));
+    background-size: 300%;
+    border-radius: 5px;
+    z-index: -1;
+    transition: all 0.4s ease;
+}
+.entrada:hover::after{
+    background-position: 100%;
+    filter: blur(15px);
+}
+.entrada::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(90deg, rgb(31, 184, 191), rgb(31, 184, 191), rgb(15, 234, 88), rgb(19, 227, 255));
+    background-size: 300%;
+    border-radius: 5px;
+    z-index: -1;
+}
+.entrada:hover::before{
+    background-position: 100%;
+}*/
+
+
+/*.salida{
+    background: rgb(255, 0, 0);
+    width: 100%;
+    padding: 25px 35px;
+    color:#FEFEFE;
+    text-align: center;
+    text-decoration: none;
+}*/
+
+/*.salida{
+    width: 100%;
+    position: relative;
+    padding: 20px 50px;
+    text-decoration: none;
+    color: #161515;
+    letter-spacing: 10px;
+    text-indent: 10px;
+    z-index: 2;
+    text-align: center;  
+    text-decoration: none;  
+}
+.salida::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(90deg, rgb(250, 82, 82), rgb(250, 82, 82), rgb(251, 255, 20), rgb(255, 15, 15));
+    background-size: 300%;
+    border-radius: 5px;
+    z-index: -1;
+    transition: all 0.4s ease;
+}
+.salida:hover::after{
+    background-position: 100%;
+    filter: blur(15px);
+}
+.salida::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(90deg, rgb(250, 82, 82), rgb(250, 82, 82), rgb(251, 255, 20), rgb(255, 15, 15));
+    background-size: 300%;
+    border-radius: 5px;
+    z-index: -1;
+}
+.salida:hover::before{
+    background-position: 100%;
+}*/
+
+  .imprimir{
+    width: 30%;
+    position: relative;
+    padding: 20px 50px;
+    text-decoration: none;
+    color: #fdfdfd;
+    letter-spacing: 10px;
+    text-indent: -20px;
+    z-index: 2; 
+    text-align: center;   
+    text-decoration: none;
+    border: none;
+    border-radius: 15px;
+}
+.imprimir::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(90deg, rgb(27, 38, 44), rgb(27, 38, 44 ), rgb(27, 38, 44), rgb(27, 38, 44));
+    background-size: 300%;
+    border-radius: 15px;
+    z-index: -1;
+    transition: all 0.4s ease;
+}
+.imprimir:hover::after{
+    background-position: 100%;
+    filter: blur(15px);
+}
+.imprimir::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(90deg, rgb(50, 130, 181), rgb(50, 130, 181), rgb(19, 227, 255), rgb(19, 227, 255));
+    background-size: 300%;
+    border-radius: 15px;
+    z-index: -1;
+}
+.imprimir:hover::before{
+    background-position: 100%;
+}
+
+
+
+.salir{
+    width: 10%;
+    position: relative;
+    padding: 20px 50px;
+    text-decoration: none;
+    color: #fdfdfd;
+    letter-spacing: 10px;
+    text-indent: -35px;
+    z-index: 2; 
+    text-align: center;   
+    text-decoration: none;
+    border: none;
+    border-radius: 15px;
+}
+.salir::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(90deg, rgb(252, 77, 77), rgb(252, 77, 77), rgb(252, 77, 77), rgb(252, 77, 77));
+    background-size: 300%;
+    border-radius: 15px;
+    z-index: -1;
+    transition: all 0.4s ease;
+}
+.salir:hover::after{
+    background-position: 100%;
+    filter: blur(15px);
+}
+.salir::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(90deg, rgb(27, 38, 44), rgb(27, 38, 44), rgb(27, 38, 44), rgb(27, 38, 44));
+    background-size: 300%;
+    border-radius: 15px;
+    z-index: -1;
+}
+.salir:hover::before{
+    background-position: 100%;
+}
+
+
+
+.buscar{
+    width: 100%;
+    position: relative;
+    padding: 20px 50px;
+    text-decoration: none;
+    color: #fdfdfd;
+    letter-spacing: 10px;
+    text-indent: 10px;
+    z-index: 2; 
+    text-align: center;   
+    text-decoration: none;
+    border: none;
+    border-radius: 15px;
+}
+.buscar::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(90deg, rgb(50, 130, 181), rgb(50, 130, 181 ), rgb(47, 138, 150), rgb(47, 138, 150));
+    background-size: 300%;
+    border-radius: 15px;
+    z-index: -1;
+    transition: all 0.4s ease;
+}
+.buscar:hover::after{
+    background-position: 100%;
+    filter: blur(15px);
+}
+.buscar::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(90deg, rgb(44, 27, 36), rgb(27, 38, 44), rgb(248, 248, 248), rgb(255, 255, 255));
+    background-size: 300%;
+    border-radius: 15px;
+    z-index: -1;
+}
+.buscar:hover::before{
+    background-position: 100%;
+}
